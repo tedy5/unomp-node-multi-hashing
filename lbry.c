@@ -16,7 +16,7 @@
 #include "sha3/sph_sha2_lbry.h"
 #include "sha3/sph_ripemd.h"
 
-void lbry_hash(const char* input, char* output)
+void lbry_hash(const char* input, char* output, uint32_t len)
 {
     char    hashA[64];
     char    hashB[32];

@@ -13,7 +13,7 @@
 #include <string.h>
 #include <stdint.h>
 
-#include "sha3/sph_sha2_lbry.h"
+#include "sha3/sph_sha2.h"
 #include "sha3/sph_ripemd.h"
 
 void lbry_hash(const char* input, char* output, uint32_t len)

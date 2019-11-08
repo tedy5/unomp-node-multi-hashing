@@ -117,8 +117,6 @@ void lyra2rev3_hash(const char* input, char* output)
 	sph_cubehash256_context  ctx_cubehash;
 	sph_bmw256_context       ctx_bmw;
 
-	sph_blake256_set_rounds(14);
-
 	sph_blake256_init(&ctx_blake);
 	sph_blake256(&ctx_blake, input, 80);
 	sph_blake256_close(&ctx_blake, hash);

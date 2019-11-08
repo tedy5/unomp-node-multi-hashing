@@ -120,7 +120,7 @@ void lyra2v3_hash(const char* input, char* output)
 	sph_blake256_set_rounds(14);
 
 	sph_blake256_init(&ctx_blake);
-	sph_blake256(&ctx_blake, input, len); /* 80 */
+	sph_blake256(&ctx_blake, input, 80);
 	sph_blake256_close(&ctx_blake, hash);
 
 	LYRA2_3(hashB, 32, hash, 32, hash, 32, 1, 4, 4);

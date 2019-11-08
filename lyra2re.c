@@ -109,7 +109,7 @@ void lyra2rev2_hash(const char* input, char* output)
    	memcpy(output, hashA, 32);
 }
 
-void lyra2v3_hash(const char* input, char* output)
+void lyra2rev3_hash(const char* input, char* output)
 {
 	uint32_t hash[8], hashB[8];
 
